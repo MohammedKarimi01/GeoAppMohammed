@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sightseeing</title>
+	<link rel="stylesheet" href="Styles/Style.css">
+	
+</head>
+<body>
+	<h1>My Locations</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Latitude</th>
+				<th>Longitude</th>
+				<th>Visited</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="place1">
+				<td>Home</td>
+				<td>59.3825919</td>
+				<td>16.5271642</td>
+				<td id="status1"></td>
+			</tr>
+			<tr id="place2">
+				<td>Gym</td>
+				<td>59.395986215006104</td>
+				<td>16.470572922816746</td>
+				<td  id="status2"></td>
+			</tr>
+			<tr id="place3">
+				<td>Willys</td>
+				<td>59.37645591254406</td>
+				<td>16.50156300275876</td>
+				<td id="status3"></td>
+			</tr>
+			<tr id="place4">
+				<td>Hospital</td>
+				<td>59.36336200939321</td>
+				<td>16.536073554837238</td>
+				<td id="status4"></td>
+			</tr>
+			<tr id="place5">
+				<td>School</td>
+				<td>59.370009309720494</td>
+				<td>16.512152727565557</td>
+				<td id="status5"></td>
+			</tr>
+		</tbody>
+	</table>
+	<p>Click the button to find your location</p>
+	<input class="FindCordsButton" id="FindMe" onclick="checkLocation()" type="button" value="Get coordinates">
+	<input class="GetNewCord" id="NewCord" onclick="setNewCord()" type="button" value="Go to Gym">
+	<input class="GetNewCordTwo" id="NewCordTwo" onclick="setNewCordTwo()" type="button" value="Go to Willys">
+	<p id="statustext"></p>
+	<p>Your current coordinates:</p>
+
+
+	<p>Latitude: <span id="ShowLatCords"></span></p>
+	<p>Longitude: <span id="ShowLongCords"></span></p>
+
+	<script src="Scripts/Script.js"></script>
+</html>
+
+
+
